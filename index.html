@@ -65,14 +65,14 @@
     </div>
     <div class="panel">
       <h2>Property economics</h2>
-      <div class="ctrl"><label>Gross / property / yr</label><input type="range" id="gross" min="20000" max="100000" step="5000" value="60000"><span class="val" id="gross_o"></span></div>
+      <div class="ctrl"><label>Gross / property / yr</label><input type="range" id="gross" min="20000" max="100000" step="5000" value="70000"><span class="val" id="gross_o"></span></div>
       <div class="ctrl"><label>Management fee</label><input type="range" id="fee" min="10" max="40" step="1" value="23"><span class="val" id="fee_o"></span></div>
       <div class="ctrl"><label>Residual (% of mgmt fee)</label><input type="range" id="res" min="0" max="20" step="0.5" value="3"><span class="val" id="res_o"></span></div>
     </div>
     <div class="panel">
       <h2>Signing bonus &amp; residual length</h2>
-      <div class="ctrl"><label>Outbound bonus</label><input type="range" id="bout" min="0" max="3000" step="100" value="1000"><span class="val" id="bout_o"></span></div>
-      <div class="ctrl"><label>Inbound bonus</label><input type="range" id="bin" min="0" max="3000" step="100" value="500"><span class="val" id="bin_o"></span></div>
+      <div class="ctrl"><label>Outbound bonus</label><input type="range" id="bout" min="0" max="3000" step="100" value="600"><span class="val" id="bout_o"></span></div>
+      <div class="ctrl"><label>Inbound bonus</label><input type="range" id="bin" min="0" max="3000" step="100" value="300"><span class="val" id="bin_o"></span></div>
       <div class="ctrl"><label>Residual months</label><input type="range" id="months" min="6" max="36" step="3" value="18"><span class="val" id="months_o"></span></div>
     </div>
   </div>
@@ -100,7 +100,7 @@
 <script>
 (function(){
   function fmt(n){ return '$'+Math.round(n).toLocaleString(); }
-  var defIn=[8,26,30,32,32], defOut=[4,12,18,22,24];
+  var defIn=[16,30,30,32,34], defOut=[8,18,21,22,24];
 
   var hr='';
   for(var y=0;y<5;y++){
